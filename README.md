@@ -221,7 +221,7 @@ npm run dev
 
 ---
 
-# 🖼 **Screenshots (Replace Below)**
+# 🖼 **Screenshots (Portal Examples)**
 
 | Feature          | Image      |
 | ---------------- | ---------- |

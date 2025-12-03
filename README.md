@@ -225,7 +225,7 @@ npm run dev
 
 | Feature          | Image      |
 | ---------------- | ---------- |
-| Homepage         | !["C:\Users\mahesh\Downloads\Exam_portal\sample images\Homepage.png"]()  |
+| Homepage         | ![Home](https://github.com/Maahivarma/Exam_portal/blob/main/sample%20images/Homepage.png)  |
 | Gamified Test UI | ![Exam]()  |
 | AI Proctor Alert | ![AI]()    |
 | Coding IDE       | ![IDE]()   |

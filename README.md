@@ -225,7 +225,7 @@ npm run dev
 
 | Feature          | Image      |
 | ---------------- | ---------- |
-| Homepage         | ![Home]()  |
+| Homepage         | ![sample images\Homepage.png]()  |
 | Gamified Test UI | ![Exam]()  |
 | AI Proctor Alert | ![AI]()    |
 | Coding IDE       | ![IDE]()   |

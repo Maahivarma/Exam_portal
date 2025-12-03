@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root{
+  --primary: #2563EB;
+  --muted: #64748B;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; 
+  -webkit-font-smoothing: antialiased; 
+  color: #0f172a;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(15,23,42,0.04);
+}
+
+.card { background: var(--card); border-radius: 10px; box-shadow: 0 8px 30px rgba(2,6,23,0.05); padding: 16px; }
+.question-circle { width:40px; height:40px; border-radius:9999px; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; }
+.small-muted { color: #64748b; font-size: 13px; }
+.timer-mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace; }
+.logo-box { width:56px; height:56px; display:flex; align-items:center; justify-content:center; border-radius:8px; background: linear-gradient(180deg, rgba(37,99,235,0.06), rgba(37,99,235,0.02)); overflow:hidden; }
+.btn-primary { background: var(--primary); color: white; padding: 8px 12px; border-radius: 8px; }
+
+/* Landing additions */
+.card { background: white; padding: 20px; border-radius: 12px; }
+.logo-box img { display:block; }
+
+@media (max-width: 900px) {
+  .grid-cols-12 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+}
+
+/* Exam Page Animations */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s ease-in-out infinite;
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.3s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out;
+}
+
+/* Exam fullscreen styles */
+.exam-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #0f172a;
+}
+
+/* Custom scrollbar for exam page */
+.exam-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.exam-scrollbar::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.exam-scrollbar::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 3px;
+}
+
+.exam-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Proctoring indicator */
+.proctor-indicator {
+  position: relative;
+}
+
+.proctor-indicator::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background: #ef4444;
+  border-radius: 50%;
+  animation: pulse-slow 1.5s ease-in-out infinite;
+}
+
+/* Focus styles for exam */
+.exam-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Results page styles */
+.result-card {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.score-ring {
+  background: conic-gradient(
+    #3b82f6 calc(var(--score) * 1%),
+    #1e293b calc(var(--score) * 1%)
+  );
+  border-radius: 50%;
+}
+
+/* Disable text selection in exam */
+.exam-no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Warning banner animation */
+.warning-banner {
+  animation: slideDown 0.3s ease-out, shake 0.5s ease-in-out 0.3s;
+}

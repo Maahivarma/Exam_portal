@@ -228,9 +228,9 @@ npm run dev
 | Homepage         | ![Home](https://github.com/Maahivarma/Exam_portal/blob/main/sample%20images/Homepage.png)  |
 | Gamified Test UI | ![Exam](https://github.com/Maahivarma/Exam_portal/blob/main/sample%20images/Gamified%20Test%20UI.png)  |
 | AI Proctor Alert | ![AI](https://github.com/Maahivarma/Exam_portal/blob/main/sample%20images/AI%20Proctor%20Alert.png)    |
-| Coding IDE       | ![IDE]()   |
-| Leaderboard      | ![Board]() |
-| Admin Portal     | ![Admin]() |
+| Coding IDE       | ![IDE](https://github.com/Maahivarma/Exam_portal/blob/main/sample%20images/Coding%20IDE.png)   |
+| Leaderboard      | ![Board](https://github.com/Maahivarma/Exam_portal/blob/main/sample%20images/Leaderboard.png) |
+| Admin Portal     | ![Admin](https://github.com/Maahivarma/Exam_portal/blob/main/sample%20images/Admin%20Portal.png) |
 
 ---
 
